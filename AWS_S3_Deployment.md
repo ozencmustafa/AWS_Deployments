@@ -1,3 +1,4 @@
+## Amazon S3 and Amazon CloudFront.
 One of the most cost-effective ways to host a static website developed with React on AWS is to use Amazon S3 and Amazon CloudFront.
 CloudFront is caching and improves the performance also one of the advantage of using CloudFront is that allows you to have https.
 
