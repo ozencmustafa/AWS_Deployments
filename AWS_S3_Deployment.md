@@ -13,7 +13,8 @@ Here's a high-level overview of the steps involved:
 
 You can start the react app on your local as below.
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/62793938/230743908-41718115-b569-4499-bc59-e23d5e190525.png)
+
 
 
 2. Next, create an S3 bucket and upload the static files to the bucket. Make sure to set the permissions on the bucket to allow public access to the files.
