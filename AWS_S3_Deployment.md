@@ -8,6 +8,9 @@ Here's a high-level overview of the steps involved:
 
 1. First, build your React application for production using a tool like npm run build or yarn build. This will generate a bundle of optimized static files that can be served to the client.
 
+![image](https://user-images.githubusercontent.com/62793938/230743714-551b626b-6575-4011-bd30-a86d2cff6704.png)
+
+
 2. Next, create an S3 bucket and upload the static files to the bucket. Make sure to set the permissions on the bucket to allow public access to the files.
 
 3. Configure the bucket to act as a static website by enabling the Static website hosting feature in the bucket properties. Specify the default index document and error document, if applicable.
