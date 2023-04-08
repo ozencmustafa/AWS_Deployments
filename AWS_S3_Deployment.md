@@ -28,6 +28,10 @@ We are going to have a bucket for awssimplify.io and a bucket for www.awsreactoz
 
 ![image](https://user-images.githubusercontent.com/62793938/230744710-a609df89-6800-42f5-83e5-2db34be52beb.png)
 
+Once buckets are generated to click on the www.awsreactozenc.io bucket and click add files and select the individual files from the build directory then upload all individual files and then select add folder and upload the the static folder contents.
+
+![image](https://user-images.githubusercontent.com/62793938/230744902-c1ec533d-cdc1-435f-8f25-93a725d29c7f.png)
+
 
 3. Configure the bucket to act as a static website by enabling the Static website hosting feature in the bucket properties. Specify the default index document and error document, if applicable.
 
