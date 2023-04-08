@@ -58,12 +58,25 @@ Next is copy below policy into Bucket Policy. Basically it allow to run getobjec
 So far everything is good and we are  publicly accesiable.
 ![image](https://user-images.githubusercontent.com/62793938/230745403-cb766269-a09e-431f-89a0-d99cec038898.png)
 
-Now we need to enable static website hosting on www.awsreactozenc.io.
-On Properties tab we scroll down and enable static web site hosting.
+3. Configure the bucket to act as a static website by enabling the Static website hosting feature in the bucket properties. Specify the default index document and error document, if applicable.
+
+Now we need to enable static website hosting on www.awsreactozenc.io.  
+
+On Properties tab we scroll down and enable Static Website hosting.
+
+We select host static web site for www bucket and also give the index.html name in the selection.
+
 ![image](https://user-images.githubusercontent.com/62793938/230745591-ac35b8d2-5b7e-4a1d-ba07-59285d0f1072.png)
 
+We also go the non www bucket and go to the properties tab and click edit to Static Website Hosting and configure as redirect.
 
-3. Configure the bucket to act as a static website by enabling the Static website hosting feature in the bucket properties. Specify the default index document and error document, if applicable.
+![image](https://user-images.githubusercontent.com/62793938/230745779-d1e27e46-9ced-4fd3-92eb-e264e5596b98.png)
+
+Since now we are done on S3 and next we go to Route 53 where we need to make some modifications.
+
+First we go to Register Domains on the left.
+![image](https://user-images.githubusercontent.com/62793938/230745922-9e45e654-b6f1-4104-b2fd-4b1d1f352085.png)
+
 
 4. Create a CloudFront distribution to serve the static files from the S3 bucket. CloudFront is a content delivery network (CDN) that caches content at edge locations around the world, providing low-latency access to users from any location.
 
