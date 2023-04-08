@@ -1,11 +1,12 @@
 One of the most cost-effective ways to host a static website developed with React on AWS is to use Amazon S3 and Amazon CloudFront.
+CloudFront is caching and improves the performance also one of the advantage of using CloudFront is that allows you to have https.
+
+![image](https://user-images.githubusercontent.com/62793938/230742100-b7d58ab4-936e-4887-b9bb-2f8cff8b3803.png)
+
 
 Here's a high-level overview of the steps involved:
 
 1. First, build your React application for production using a tool like npm run build or yarn build. This will generate a bundle of optimized static files that can be served to the client.
-![image](https://user-images.githubusercontent.com/62793938/230741866-d51ec691-fdd1-4e15-a109-24a7c9255148.png)
-
-
 
 2. Next, create an S3 bucket and upload the static files to the bucket. Make sure to set the permissions on the bucket to allow public access to the files.
 
