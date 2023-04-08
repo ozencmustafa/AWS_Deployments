@@ -15,6 +15,9 @@ You can start the react app on your local as below.
 
 ![image](https://user-images.githubusercontent.com/62793938/230743908-41718115-b569-4499-bc59-e23d5e190525.png)
 
+We stopped the application with CTL+C as we confirmed that is running then we will bundle all files so that we can deploy on cloud.
+
+![image](https://user-images.githubusercontent.com/62793938/230744086-3e4a0847-d758-4e3b-b748-dba535d2fe38.png)
 
 
 2. Next, create an S3 bucket and upload the static files to the bucket. Make sure to set the permissions on the bucket to allow public access to the files.
