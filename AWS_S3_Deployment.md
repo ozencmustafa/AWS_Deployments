@@ -24,11 +24,11 @@ We stopped the application with CTL+C as we confirmed that is running then we wi
 
 ![image](https://user-images.githubusercontent.com/62793938/230744209-9c548d4a-1418-449c-8a13-eb3462824fa9.png)
 
-We are going to have a bucket for awssimplify.io and a bucket for www.awsreactozenc.io. Reason to have both is that one of them is going to be the authority so it is going to have all of our contents and the other is goin to be basically for redirect so someone goes to that website its going to redirect us to the other version.
+We are going to have a bucket for awsreactozenc.net and a bucket for www.awsreactozenc.net. Reason to have both is that one of them is going to be the authority so it is going to have all of our contents and the other is goin to be basically for redirect so someone goes to that website its going to redirect us to the other version.
 
 ![image](https://user-images.githubusercontent.com/62793938/230744710-a609df89-6800-42f5-83e5-2db34be52beb.png)
 
-Once buckets are generated to click on the www.awsreactozenc.io bucket and click add files and select the individual files from the build directory then upload all individual files and then select add folder and upload the the static folder contents.
+Once buckets are generated to click on the www.awsreactozenc.net bucket and click add files and select the individual files from the build directory then upload all individual files and then select add folder and upload the the static folder contents.
 
 ![image](https://user-images.githubusercontent.com/62793938/230744902-c1ec533d-cdc1-435f-8f25-93a725d29c7f.png)
 
@@ -36,7 +36,7 @@ Then you go the Bucket and enable public access. See the 3 steps.
 
 ![image](https://user-images.githubusercontent.com/62793938/230745136-c5035b5b-9d16-413c-a684-7810acf31292.png)
 
-Next is copy below policy into Bucket Policy. Basically it allow to run getobject from www.awsreactozenc.io. 
+Next is copy below policy into Bucket Policy. Basically it allow to run getobject from www.awsreactozenc.net. 
 ```
 {
     "Version": "2012-10-17",
@@ -49,7 +49,7 @@ Next is copy below policy into Bucket Policy. Basically it allow to run getobjec
                 "s3:GetObject"
             ],
             "Resource": [
-                "arn:aws:s3:::www.awsreactozenc.io/*"
+                "arn:aws:s3:::www.awsreactozenc.net/*"
             ]
         }
     ]
@@ -60,7 +60,7 @@ So far everything is good and we are  publicly accesiable.
 
 3. Configure the bucket to act as a static website by enabling the Static website hosting feature in the bucket properties. Specify the default index document and error document, if applicable.
 
-Now we need to enable static website hosting on www.awsreactozenc.io.  
+Now we need to enable static website hosting on www.awsreactozenc.net. 
 
 On Properties tab we scroll down and enable Static Website hosting.
 
