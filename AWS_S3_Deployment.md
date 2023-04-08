@@ -55,6 +55,13 @@ Next is copy below policy into Bucket Policy. Basically it allow to run getobjec
     ]
 }
 ```
+So far everything is good and we are  publicly accesiable.
+![image](https://user-images.githubusercontent.com/62793938/230745403-cb766269-a09e-431f-89a0-d99cec038898.png)
+
+Now we need to enable static website hosting on www.awsreactozenc.io.
+On Properties tab we scroll down and enable static web site hosting.
+![image](https://user-images.githubusercontent.com/62793938/230745591-ac35b8d2-5b7e-4a1d-ba07-59285d0f1072.png)
+
 
 3. Configure the bucket to act as a static website by enabling the Static website hosting feature in the bucket properties. Specify the default index document and error document, if applicable.
 
