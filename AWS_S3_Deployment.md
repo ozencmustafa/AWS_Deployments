@@ -32,6 +32,29 @@ Once buckets are generated to click on the www.awsreactozenc.io bucket and click
 
 ![image](https://user-images.githubusercontent.com/62793938/230744902-c1ec533d-cdc1-435f-8f25-93a725d29c7f.png)
 
+Then you go the Bucket and enable public access. See the 3 steps.
+
+![image](https://user-images.githubusercontent.com/62793938/230745136-c5035b5b-9d16-413c-a684-7810acf31292.png)
+
+Next is Bucket Policy.
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:GetObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::Bucket-Name/*"
+            ]
+        }
+    ]
+}
+```
 
 3. Configure the bucket to act as a static website by enabling the Static website hosting feature in the bucket properties. Specify the default index document and error document, if applicable.
 
