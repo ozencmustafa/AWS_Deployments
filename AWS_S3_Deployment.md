@@ -22,6 +22,10 @@ We stopped the application with CTL+C as we confirmed that is running then we wi
 
 2. Next, create an S3 bucket and upload the static files to the bucket. Make sure to set the permissions on the bucket to allow public access to the files.
 
+![image](https://user-images.githubusercontent.com/62793938/230744209-9c548d4a-1418-449c-8a13-eb3462824fa9.png)
+
+We are going to have a bucket for awssimplify.io and a bucket for www.awssimplify.io. Reason to have both is that one of them is going to be the authority so it is going to have all of our contents and the other is goin to be basically for redirect so someone goes to that website its going to redirect us to the other version.
+
 3. Configure the bucket to act as a static website by enabling the Static website hosting feature in the bucket properties. Specify the default index document and error document, if applicable.
 
 4. Create a CloudFront distribution to serve the static files from the S3 bucket. CloudFront is a content delivery network (CDN) that caches content at edge locations around the world, providing low-latency access to users from any location.
