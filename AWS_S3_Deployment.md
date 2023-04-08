@@ -36,7 +36,7 @@ Then you go the Bucket and enable public access. See the 3 steps.
 
 ![image](https://user-images.githubusercontent.com/62793938/230745136-c5035b5b-9d16-413c-a684-7810acf31292.png)
 
-Next is Bucket Policy.
+Next is copy below policy into Bucket Policy. Basically it allow to run getobject from www.awsreactozenc.io. 
 ```
 {
     "Version": "2012-10-17",
@@ -49,7 +49,7 @@ Next is Bucket Policy.
                 "s3:GetObject"
             ],
             "Resource": [
-                "arn:aws:s3:::Bucket-Name/*"
+                "arn:aws:s3:::www.awsreactozenc.io/*"
             ]
         }
     ]
