@@ -40,5 +40,8 @@ Now you can access to AWS from your VS IDE.
 
 ![image](https://user-images.githubusercontent.com/62793938/230801440-ed3231ee-53c9-4ce7-a2c8-70d211bd1dd4.png)
 
+Now right click on the project folder demo_dotnet and select AWS Elastic Beanstalk 
+
+![image](https://user-images.githubusercontent.com/62793938/230801654-4b123dfd-90e7-4a16-83c2-9a9c95231aed.png)
 
 
