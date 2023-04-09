@@ -74,8 +74,21 @@ We also go the non www bucket and go to the properties tab and click edit to Sta
 
 Since now we are done on S3 and next we go to Route 53 where we need to make some modifications.
 
-First we go to Register Domains on the left.
-![image](https://user-images.githubusercontent.com/62793938/230745922-9e45e654-b6f1-4104-b2fd-4b1d1f352085.png)
+First we go to Registered Domains on the left.
+![image](https://user-images.githubusercontent.com/62793938/230747414-6ef56b5c-0b3b-45b0-8af7-6109e882e7a7.png)
+
+Then we create two DNS records. 
+One for www bucket.
+
+![image](https://user-images.githubusercontent.com/62793938/230747540-6e6d388e-3990-4245-baf1-c2ba58c345fd.png)
+
+One for the non www bucket.
+
+![image](https://user-images.githubusercontent.com/62793938/230747576-a4f7572e-1249-4221-b16f-4b2cb1a2b424.png)
+
+We leave the subdomain empty.
+
+![image](https://user-images.githubusercontent.com/62793938/230747621-fc55dd5f-e629-4b20-950f-f3dfc6cb27d8.png)
 
 
 4. Create a CloudFront distribution to serve the static files from the S3 bucket. CloudFront is a content delivery network (CDN) that caches content at edge locations around the world, providing low-latency access to users from any location.
