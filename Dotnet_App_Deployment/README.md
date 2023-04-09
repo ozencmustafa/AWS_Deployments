@@ -45,3 +45,11 @@ Now right click on the project folder demo_dotnet and select AWS Elastic Beansta
 ![image](https://user-images.githubusercontent.com/62793938/230801654-4b123dfd-90e7-4a16-83c2-9a9c95231aed.png)
 
 
+We click Next.
+
+![image](https://user-images.githubusercontent.com/62793938/230801777-0e05d5ed-1657-4e0d-8ff7-045f442c93f4.png)
+
+
+
+
+
