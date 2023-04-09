@@ -16,3 +16,15 @@ You can easily deploy web applications, worker services, and other .NET-based se
 3. Configure the project: Open the project properties and set the Start URL to the name of the HTML page you created (e.g. "index.html"). You may also want to configure other project settings, such as the target framework version and build options.
 
 4. Build and run the project: Press F5 or select the Debug -> Start Debugging menu option to build and run the project. The website should open in your default web browser and display the contents of your HTML page.
+
+### Deployment steps on AWS
+
+1. Starts with adding AWS extension to Microsoft Visual Studio 
+
+![image](https://user-images.githubusercontent.com/62793938/230800296-c1bd6396-3476-4db5-806c-edfcf6286abe.png)
+
+2. Under View select AWS Explorer
+
+![image](https://user-images.githubusercontent.com/62793938/230800400-da2cae7a-6040-4665-a60c-6270efe318bb.png)
+
+
