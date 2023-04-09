@@ -7,7 +7,7 @@ You can easily deploy web applications, worker services, and other .NET-based se
 .NET Core, and others. Beanstalk takes care of provisioning, scaling, and managing the underlying infrastructure, so you can focus on your application code.
 
 
-### Here are the basic steps you can follow to create a ASP.NET application.
+### Here are the basic steps that you can follow to create a ASP.NET application.
 
 1. Create a new .NET project: Open Visual Studio and create a new ASP.NET Web Application project. Choose the Empty template and select the .NET Framework version you want to use.
 
@@ -17,14 +17,21 @@ You can easily deploy web applications, worker services, and other .NET-based se
 
 4. Build and run the project: Press F5 or select the Debug -> Start Debugging menu option to build and run the project. The website should open in your default web browser and display the contents of your HTML page.
 
-### Deployment steps on AWS
+### Deployment steps for Elastic Beanstalk
 
-1. Starts with adding AWS extension to Microsoft Visual Studio 
+1. Starts with adding AWS extension to Microsoft Visual Studio.
 
 ![image](https://user-images.githubusercontent.com/62793938/230800296-c1bd6396-3476-4db5-806c-edfcf6286abe.png)
 
-2. Under View select AWS Explorer
+2. Under View select AWS Explorer.
 
 ![image](https://user-images.githubusercontent.com/62793938/230800400-da2cae7a-6040-4665-a60c-6270efe318bb.png)
+
+Now We have to integrate our AWS to our Studio Code.
+
+![image](https://user-images.githubusercontent.com/62793938/230800956-2587ed08-06dd-4e18-a14c-837ef43f849c.png)
+
+
+
 
 
