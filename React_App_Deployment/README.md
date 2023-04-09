@@ -73,7 +73,8 @@ We select host static web site for www bucket and also give the index.html name 
 
 We also go the non www bucket and go to the properties tab and click edit to Static Website Hosting and configure as redirect.
 
-![image](https://user-images.githubusercontent.com/62793938/230745779-d1e27e46-9ced-4fd3-92eb-e264e5596b98.png)
+![image](https://user-images.githubusercontent.com/62793938/230795112-7b8fbb4b-ca79-4ade-b74d-16b8b2290a98.png)
+
 
 Since now we are done on S3 and next we go to Route 53 where we need to make some modifications.
 
