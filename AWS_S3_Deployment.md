@@ -96,11 +96,34 @@ And www.awsreactozenc.net is accesiable!!
 
 4. Create a CloudFront distribution to serve the static files from the S3 bucket. CloudFront is a content delivery network (CDN) that caches content at edge locations around the world, providing low-latency access to users from any location.
 
-We go to Certificate Manager Section and request a certificate.
+First we go to Certificate Manager Section and request a certificate to make our wibesite secure.
 
 ![image](https://user-images.githubusercontent.com/62793938/230747873-e040db76-7a45-4727-8253-5b4970efb7fa.png)
 
-We can valide our certificate through the DNS validity simply by adding the CNAME into the Route 53. It is very simple as we just click the button saying add to the DNS records.
+We can valide our certificates through the DNS validity, simply by adding the CNAME into the Route 53. It is very simple as we just click the button saying add to the DNS records.
+
+After adding the CNAME into DNS, it can take a while until that certificates to be successfuly validated.
+
+![image](https://user-images.githubusercontent.com/62793938/230748124-14114504-f90e-4bdc-824d-e735975145cb.png)
+
+Now we search for CloudFront and click CloudFront Distrubution Creation.
+
+![image](https://user-images.githubusercontent.com/62793938/230748234-eb7c004c-6f65-4f0b-8389-10d05786635a.png)
+
+Origin Domain Name should be copied from S3 Bucket -- Properties -- Static Website
+
+![image](https://user-images.githubusercontent.com/62793938/230748309-334b8064-2a56-4b37-a06f-d34e303e19d3.png)
+
+a. Redirect from HTTP to HTTPS should be selected.
+
+b. SSL certificates should be selected.
+
+So we do the same for the non www bucket and create a new distrubution.
+
+And Next step is going to update A records for www and non www buckets in the "Route Traffic to section"  from pointing S3 to CloudFront.
+
+![image](https://user-images.githubusercontent.com/62793938/230749115-86cdfe4e-f9df-4098-930c-5fc665c9e195.png)
+
 
 5. Finally, configure your domain name to point to the CloudFront distribution. This can be done by creating a CNAME record in your DNS settings that points to the CloudFront distribution domain name.
 
