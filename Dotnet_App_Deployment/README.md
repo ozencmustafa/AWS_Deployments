@@ -31,6 +31,10 @@ Now We have to integrate our AWS to our Studio Code.
 
 ![image](https://user-images.githubusercontent.com/62793938/230800956-2587ed08-06dd-4e18-a14c-837ef43f849c.png)
 
+You create user, user group and access_key to login to Visual Studio.
+User is created with Elastic Beanstalk Admin rights. Access key can be download as csv file and can be import to VS.
+
+![image](https://user-images.githubusercontent.com/62793938/230801359-4d4ff808-752f-4efe-8399-2b22586a13ea.png)
 
 
 
