@@ -124,6 +124,20 @@ And Next step is going to update A records for www and non www buckets in the "R
 
 ![image](https://user-images.githubusercontent.com/62793938/230749115-86cdfe4e-f9df-4098-930c-5fc665c9e195.png)
 
+Next Step is to create Coudfront distrubution for www and non-www buckets. Creating Cloudfront has several little critical details. 
+
+The Difficulty for me was to select http in Origin domain.
+
+![image](https://user-images.githubusercontent.com/62793938/230791323-5fba32d1-e28e-43d6-b56f-9d3ef34bb715.png)
+
+In Behviour Settings Redirect HTTP to HTTPS is selected.
+
+![image](https://user-images.githubusercontent.com/62793938/230791354-0a913f65-9f03-4952-8c66-7755989097c2.png)
+
+In General Settings Alternate domain name will be created and Custom SSL certificate will be selected.
+
+![image](https://user-images.githubusercontent.com/62793938/230791487-05cd80e7-2b68-4027-a7b7-3dddb9fe70b9.png)
+
 
 5. Finally, configure your domain name to point to the CloudFront distribution. This can be done by creating a CNAME record in your DNS settings that points to the CloudFront distribution domain name.
 
