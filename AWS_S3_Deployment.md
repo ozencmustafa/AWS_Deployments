@@ -90,8 +90,17 @@ We leave the subdomain empty.
 
 ![image](https://user-images.githubusercontent.com/62793938/230747621-fc55dd5f-e629-4b20-950f-f3dfc6cb27d8.png)
 
+Then we click to Create Records!
+
+And www.awsreactozenc.net is accesiable!!
 
 4. Create a CloudFront distribution to serve the static files from the S3 bucket. CloudFront is a content delivery network (CDN) that caches content at edge locations around the world, providing low-latency access to users from any location.
+
+We go to Certificate Manager Section and request a certificate.
+
+![image](https://user-images.githubusercontent.com/62793938/230747873-e040db76-7a45-4727-8253-5b4970efb7fa.png)
+
+We can valide our certificate through the DNS validity simply by adding the CNAME into the Route 53. It is very simple as we just click the button saying add to the DNS records.
 
 5. Finally, configure your domain name to point to the CloudFront distribution. This can be done by creating a CNAME record in your DNS settings that points to the CloudFront distribution domain name.
 
