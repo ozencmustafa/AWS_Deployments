@@ -134,6 +134,7 @@ In General Settings Alternate domain name will be created and Custom SSL certifi
 
 ![image](https://user-images.githubusercontent.com/62793938/230791487-05cd80e7-2b68-4027-a7b7-3dddb9fe70b9.png)
 
+We also create a cloudfront distribution for non-www bucket.
 
 5. Finally, configure your domain name to point to the CloudFront distribution. This can be done by creating a CNAME record in your DNS settings that points to the CloudFront distribution domain name.
 
