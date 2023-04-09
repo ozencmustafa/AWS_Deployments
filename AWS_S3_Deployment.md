@@ -106,6 +106,7 @@ After adding the CNAME into DNS, it can take a while until that certificates to 
 
 ![image](https://user-images.githubusercontent.com/62793938/230748124-14114504-f90e-4bdc-824d-e735975145cb.png)
 
+
 Now we search for CloudFront and click CloudFront Distrubution Creation.
 
 ![image](https://user-images.githubusercontent.com/62793938/230748234-eb7c004c-6f65-4f0b-8389-10d05786635a.png)
@@ -114,17 +115,12 @@ Origin Domain Name should be copied from S3 Bucket -- Properties -- Static Websi
 
 ![image](https://user-images.githubusercontent.com/62793938/230748309-334b8064-2a56-4b37-a06f-d34e303e19d3.png)
 
-a. Redirect from HTTP to HTTPS should be selected.
+    a. Redirect from HTTP to HTTPS should be selected.
 
-b. SSL certificates should be selected.
+    b. SSL certificates should be selected.
 
-So we do the same for the non www bucket and create a new distrubution.
+    c. So we do the same for the non www bucket and create a new distrubution.
 
-And Next step is going to update A records for www and non www buckets in the "Route Traffic to section"  from pointing S3 to CloudFront.
-
-![image](https://user-images.githubusercontent.com/62793938/230749115-86cdfe4e-f9df-4098-930c-5fc665c9e195.png)
-
-Next Step is to create Coudfront distrubution for www and non-www buckets. Creating Cloudfront has several little critical details. 
 
 The Difficulty for me was to select http in Origin domain.
 
@@ -140,4 +136,8 @@ In General Settings Alternate domain name will be created and Custom SSL certifi
 
 
 5. Finally, configure your domain name to point to the CloudFront distribution. This can be done by creating a CNAME record in your DNS settings that points to the CloudFront distribution domain name.
+
+And Next step is going to update A records for www and non www buckets in the "Route Traffic to section"  from pointing S3 to CloudFront.
+
+![image](https://user-images.githubusercontent.com/62793938/230749115-86cdfe4e-f9df-4098-930c-5fc665c9e195.png)
 
