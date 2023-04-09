@@ -36,6 +36,9 @@ User is created with Elastic Beanstalk Admin rights. Access key can be download 
 
 ![image](https://user-images.githubusercontent.com/62793938/230801359-4d4ff808-752f-4efe-8399-2b22586a13ea.png)
 
+Now you can access to AWS from your VS IDE.
+
+![image](https://user-images.githubusercontent.com/62793938/230801440-ed3231ee-53c9-4ce7-a2c8-70d211bd1dd4.png)
 
 
 
