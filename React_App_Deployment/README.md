@@ -145,3 +145,21 @@ And Next step is going to update A records for www and non www buckets in the "R
 
 ![image](https://user-images.githubusercontent.com/62793938/230749115-86cdfe4e-f9df-4098-930c-5fc665c9e195.png)
 
+
+You can click Shift_CTL+J to open console and select Networks and reload the website confirm that Server and Via is Cloudfront.
+
+
+If you change your Website and want to repool all contents from S3 again you can go to Cloudfront and go to distribution settings and select Invalidations.
+
+![image](https://user-images.githubusercontent.com/62793938/230794835-fa172b98-5a67-48c5-8f6a-86cea8267128.png)
+
+We create invalidation by addding all directories and subdirectories and files by adding /**/*
+
+![image](https://user-images.githubusercontent.com/62793938/230794949-0d9d6cec-3d82-48b1-ab6c-56ad39b3fcb7.png)
+
+
+
+
+
+
+
