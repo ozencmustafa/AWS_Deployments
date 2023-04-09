@@ -1,4 +1,6 @@
+
 # AWS_Deployments
+
 There are several ways to host a web application on AWS, depending on the specific requirements of the application, the level of control and customization needed, and the budget and resources available. Here are some common options:
 
 ### Amazon Elastic Compute Cloud (EC2): 
