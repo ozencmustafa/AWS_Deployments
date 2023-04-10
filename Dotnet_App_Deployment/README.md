@@ -53,7 +53,8 @@ Selected policy is SSMManagedInstanceCore.
 Next Step is the define the network.
 
 ![image](https://user-images.githubusercontent.com/62793938/230979308-54d18146-97cd-4543-badb-e9f9670d79eb.png)
-
+ 
+Instance Subnets are also selected, Screenshot should be updated.
 
 Next Step is Configure instance traffic and scaling
 
