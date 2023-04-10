@@ -9,58 +9,70 @@ You can easily deploy web applications, worker services, and other .NET-based se
 
 ### Here are the basic steps that you can follow to create a ASP.NET application.
 
-1. Create a new .NET project: Open Visual Studio and create a new ASP.NET Web Application project. Choose the Empty template and select the .NET Framework version you want to use.
+Create Application.
 
-2. Add a web page: Right-click on the project in the Solution Explorer and select Add -> New Item. Choose the HTML Page template and give it a name, such as index.html. In the file, add the HTML and CSS code for your website. You can also use JavaScript if needed.
+![image](https://user-images.githubusercontent.com/62793938/230967421-6dc3c000-b0b6-4949-a30f-84766333e216.png)
 
-3. Configure the project: Open the project properties and set the Start URL to the name of the HTML page you created (e.g. "index.html"). You may also want to configure other project settings, such as the target framework version and build options.
+Application name is typed and Web Server Environment is selected.
 
-4. Build and run the project: Press F5 or select the Debug -> Start Debugging menu option to build and run the project. The website should open in your default web browser and display the contents of your HTML page.
+![image](https://user-images.githubusercontent.com/62793938/230967810-8faf1a0c-2e21-4216-8588-4a596ce91fd6.png)
 
-### Deployment steps for Elastic Beanstalk
+Domain can be left empty as AWS can select the available one.
 
-1. Starts with adding AWS extension to Microsoft Visual Studio.
+Platform is selected .NET on windows.
 
-![image](https://user-images.githubusercontent.com/62793938/230800296-c1bd6396-3476-4db5-806c-edfcf6286abe.png)
+![image](https://user-images.githubusercontent.com/62793938/230968352-ce55745d-b350-47b7-ba74-193a10ba4171.png)
 
-2. Under View select AWS Explorer.
+We will deploy a sample application. 
 
-![image](https://user-images.githubusercontent.com/62793938/230800400-da2cae7a-6040-4665-a60c-6270efe318bb.png)
+![image](https://user-images.githubusercontent.com/62793938/230968511-92124179-c1eb-404c-91c1-ceb131abbe1c.png)
 
-Now We have to integrate our AWS to our Studio Code.
+We are going to configure Service Access and we will create a new EC2 key pair.
 
-![image](https://user-images.githubusercontent.com/62793938/230800956-2587ed08-06dd-4e18-a14c-837ef43f849c.png)
+![image](https://user-images.githubusercontent.com/62793938/230969219-95d2995c-4f91-4101-bd8f-5af3e56b3b34.png)
 
-You create user, user_group and access_key to login to Visual Studio. 
-You also add the new user to the new user_group as Beanstalk Admin permission was given to the user_group.
-User_group is created with Elastic Beanstalk Admin rights. 
-Access_key can be downloaded as a csv file and can be import to VS.
+pem file created.
 
-![image](https://user-images.githubusercontent.com/62793938/230801359-4d4ff808-752f-4efe-8399-2b22586a13ea.png)
-
-Now you can access to AWS from your VS IDE.
-
-![image](https://user-images.githubusercontent.com/62793938/230801440-ed3231ee-53c9-4ce7-a2c8-70d211bd1dd4.png)
-
-Now right click on the project folder demo_dotnet and select AWS Elastic Beanstalk 
-
-![image](https://user-images.githubusercontent.com/62793938/230801654-4b123dfd-90e7-4a16-83c2-9a9c95231aed.png)
+![image](https://user-images.githubusercontent.com/62793938/230969927-29f291d9-12c3-4d9d-acaf-4b1dc04415f8.png)
 
 
-We click Next.
+We go to IAM and create a service role.
 
-![image](https://user-images.githubusercontent.com/62793938/230801777-0e05d5ed-1657-4e0d-8ff7-045f442c93f4.png)
+![image](https://user-images.githubusercontent.com/62793938/230975010-eb734089-fcd5-4f8c-a0f6-f3974e977c3d.png)
 
-We gave a name to Application and Environment and also check the availability of the URL. Than click Next.
+Details are selected as below.
 
-![image](https://user-images.githubusercontent.com/62793938/230802360-6badc065-c048-4dab-a8b5-8763ef1f3d76.png)
+![image](https://user-images.githubusercontent.com/62793938/230975574-5adf9d5e-f7d9-4b87-9774-59e411a1e912.png)
+
+Selected policy is SSMManagedInstanceCore.
+
+![image](https://user-images.githubusercontent.com/62793938/230975947-ad139c9b-33e4-4ba8-ad94-189cd8b9660f.png)
+
+![image](https://user-images.githubusercontent.com/62793938/230978909-ecbd526e-d980-4fd2-a95d-3e68be4fef5c.png)
+
+Next Step is the define the network.
+
+![image](https://user-images.githubusercontent.com/62793938/230979308-54d18146-97cd-4543-badb-e9f9670d79eb.png)
 
 
-We select t2.micro as instance type. Unselect Single instance environment.
+Next Step is Configure instance traffic and scaling
 
-![image](https://user-images.githubusercontent.com/62793938/230802476-1ba329e3-cf01-4700-9fae-f0e20b12ec52.png)
+![image](https://user-images.githubusercontent.com/62793938/230980171-75474064-e0a5-452c-aadf-39d8ee63b110.png)
 
-Then Next-Next-Deploy.
+![image](https://user-images.githubusercontent.com/62793938/230980259-f884ad44-1307-4e2e-9ed4-1c0046a362f8.png)
+
+Next Next Submit, It will take sometime to create the environment.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
