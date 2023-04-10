@@ -31,8 +31,10 @@ Now We have to integrate our AWS to our Studio Code.
 
 ![image](https://user-images.githubusercontent.com/62793938/230800956-2587ed08-06dd-4e18-a14c-837ef43f849c.png)
 
-You create user, user group and access_key to login to Visual Studio.
-User is created with Elastic Beanstalk Admin rights. Access key can be download as csv file and can be import to VS.
+You create user, user_group and access_key to login to Visual Studio. 
+You also add the new user to the new user_group as Beanstalk Admin permission was given to the user_group.
+User_group is created with Elastic Beanstalk Admin rights. 
+Access_key can be downloaded as a csv file and can be import to VS.
 
 ![image](https://user-images.githubusercontent.com/62793938/230801359-4d4ff808-752f-4efe-8399-2b22586a13ea.png)
 
@@ -48,6 +50,19 @@ Now right click on the project folder demo_dotnet and select AWS Elastic Beansta
 We click Next.
 
 ![image](https://user-images.githubusercontent.com/62793938/230801777-0e05d5ed-1657-4e0d-8ff7-045f442c93f4.png)
+
+We gave a name to Application and Environment and also check the availability of the URL. Than click Next.
+
+![image](https://user-images.githubusercontent.com/62793938/230802360-6badc065-c048-4dab-a8b5-8763ef1f3d76.png)
+
+
+We select t2.micro as instance type. Unselect Single instance environment.
+
+![image](https://user-images.githubusercontent.com/62793938/230802476-1ba329e3-cf01-4700-9fae-f0e20b12ec52.png)
+
+Then Next-Next-Deploy.
+
+
 
 
 
