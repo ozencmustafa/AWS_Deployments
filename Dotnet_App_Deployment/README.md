@@ -64,6 +64,10 @@ Next Step is Configure instance traffic and scaling
 
 Next Next Submit, It will take sometime to create the environment.
 
+Then you can access ASP.NET application running on your EBS Environment.
+
+http://aspnetebs-env.eba-a2b7r5wf.eu-central-1.elasticbeanstalk.com/ 
+
 
 
 
